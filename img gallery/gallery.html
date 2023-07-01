@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="gallery.css" />
+    <title>Responsive Hair Dresser Website</title>
+  </head>
+  <body>
+    <div class="full-img" id="fullImgBox">
+      <img src="./images/img1.jpg" alt="nike" id="fullImg" />
+      <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+      <img src="./images/img1.jpg" alt="nike" onclick="openFullImg(this.src)" />
+      <img src="./images/img2.jpg" alt="puma" onclick="openFullImg(this.src)" />
+      <img
+        src="./images/img3.jpg"
+        alt="pumacat"
+        onclick="openFullImg(this.src)"
+      />
+      <img src="./images/img4.jpg" alt="moto" onclick="openFullImg(this.src)" />
+      <img
+        src="./images/img5.jpg"
+        alt="iphone"
+        onclick="openFullImg(this.src)"
+      />
+      <img src="./images/img6.jpg" alt="oppo" onclick="openFullImg(this.src)" />
+      <img src="./images/img7.jpg" alt="poco" onclick="openFullImg(this.src)" />
+      <img
+        src="./images/img8.jpg"
+        alt="realme"
+        onclick="openFullImg(this.src)"
+      />
+    </div>
+
+    <script>
+      var fullImgBox = document.getElementById("fullImgBox");
+      var fullImg = documnet.getElementById("fullImg");
+
+      function openFullImg(pic) {
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+      }
+      function closeFullImg() {
+        fullImgBox.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
